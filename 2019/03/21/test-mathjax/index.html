@@ -96,14 +96,17 @@
 
 
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="$$P = \frac{\sum_{i=1}^n (x_i- x)(y_i- y)}{\displaystyle \left[\sum_{i=1}^n (x_i-x)^2\sum_{i=1}^n (y_i-y)^2\right]^{1/2} }$$">
+<meta property="og:type" content="article">
 <meta property="og:title" content="test_mathjax">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/test-mathjax/index.html">
 <meta property="og:site_name" content="远  山">
+<meta property="og:description" content="$$P = \frac{\sum_{i=1}^n (x_i- x)(y_i- y)}{\displaystyle \left[\sum_{i=1}^n (x_i-x)^2\sum_{i=1}^n (y_i-y)^2\right]^{1/2} }$$">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T06:27:33.085Z">
+<meta property="og:updated_time" content="2019-03-21T06:50:52.848Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test_mathjax">
+<meta name="twitter:description" content="$$P = \frac{\sum_{i=1}^n (x_i- x)(y_i- y)}{\displaystyle \left[\sum_{i=1}^n (x_i-x)^2\sum_{i=1}^n (y_i-y)^2\right]^{1/2} }$$">
 
 
 
@@ -366,9 +369,13 @@
                 
               
 
-              <time title="创建时间：2019-03-21 14:27:33" itemprop="dateCreated datePublished" datetime="2019-03-21T14:27:33+08:00">2019-03-21</time>
+              <time title="创建时间：2019-03-21 14:27:33 / 修改时间：14:50:52" itemprop="dateCreated datePublished" datetime="2019-03-21T14:27:33+08:00">2019-03-21</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -401,7 +408,8 @@
       
 
       
-        
+        <p>$$<br>P = \frac<br>{\sum_{i=1}^n (x_i- x)(y_i- y)}<br>{\displaystyle \left[<br>\sum_{i=1}^n (x_i-x)^2<br>\sum_{i=1}^n (y_i-y)^2<br>\right]^{1/2} }<br>$$</p>
+
       
     </div>
 
@@ -749,6 +757,46 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
